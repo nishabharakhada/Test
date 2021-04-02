@@ -1,0 +1,37 @@
+git init
+git add README.md
+git commit -m "first commit"
+git branch -b main
+git remote add origin addgit push -u origin main
+
+
+
+
+************
+
+Sub DQAnalysis()
+
+    Worksheets("DQ Analysis").Activate
+    
+    Range("A1").Value = "DAQO (Ticker: DQ)"
+    
+    'Create a header row
+    Cells(3, 1).Value = "Year"
+    
+    Cells(3, 2).Value = "Total Daily Volume"
+    
+    Cells(3, 3).Value = "Return"
+    
+
+End Sub
+
+
+Sub DQAnalysis()
+
+    For i = 1 To 8
+        
+        MsgBox (Cells(1, i))
+
+    Next i
+    
+End Sub

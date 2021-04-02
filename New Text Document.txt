@@ -1,0 +1,610 @@
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git init
+Initialized empty Git repository in C:/UCB Class Test Gitlab+Github/MyRepo/01-As                                                                            signments/01-Kickstarter/Resources/.git/
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (master)
+$ ls
+Kickstarter_Challenge.rar   README.md.md
+Kickstarter_Challenge.xlsx  Theater_Outcomes_vs_Launch.png
+Outcomes_vs_Goals.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (master)
+$ git add README.md
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (master)
+$ git commit -m "first commit"
+[master (root-commit) 83bc9e9] first commit
+ 1 file changed, 39 insertions(+)
+ create mode 100644 README.md
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (master)
+$ git branch -b main
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (master)
+$ git branch -m main
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git remote add origin https://github.com/nishabharakhada/Kickstarter-Analysis.                                                                            git
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git push -u origin main
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': nishabharakhada
+
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nishabharakhada/Kickstarter                                                                            -Analysis.git/'
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ ls
+Kickstarter_Challenge.rar   README.md
+Kickstarter_Challenge.xlsx  Theater_Outcomes_vs_Launch.png
+Outcomes_vs_Goals.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git add Kickstarter_Challenge.xlsx
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git commit -m "second commit"
+[main aaf202f] second commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Kickstarter_Challenge.xlsx
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git branch - M main
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git add Outcomes_vs_Goals.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter/Resources (main)
+$ git commit -m "third commit"
+[main 6cbcd9a] third commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Outcomes_vs_Goals.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git branch -M main
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ ls
+Kickstarter_Challenge.rar   README.md
+Kickstarter_Challenge.xlsx  Theater_Outcomes_vs_Launch.png
+Outcomes_vs_Goals.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git add Theater_Outcomes_vs_Launch.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git commit -m "fourth commit"
+[main 1734646] fourth commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Theater_Outcomes_vs_Launch.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git brnach -M main
+git: 'brnach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git branch -m main
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git remote add origin https://github.com/nishabharakhada/Kickstarter-Analysis.                                                                            git
+fatal: remote origin already exists.
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git push -u origin main
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': nishabharakhada
+Jskremote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nishabharakhada/Kickstarter                                                                            -Analysis.git/'
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ git push -u origin main
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': nishabharakhada
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nishabharakhada/Kickstarter                                                                            -Analysis.git/'
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ ls
+Kickstarter_Challenge.rar   README.md
+Kickstarter_Challenge.xlsx  Theater_Outcomes_vs_Launch.png
+Outcomes_vs_Goals.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignme                                                                            nts/01-Kickstarter/Resources (main)
+$ cd ..
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Resources/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git add .
+warning: adding embedded git repository: Resources
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Resources
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Resources
+hint:
+hint: See "git help submodule" for more information.
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+        new file:   Resources
+
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git rm --cached Resources
+error: the following file has staged content different from both the
+file and the HEAD:
+    Resources
+(use -f to force removal)
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git rm -f --cached Resources
+rm 'Resources'
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Resources/
+
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git add .
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git commit -m "Added Resources folder"
+[main 6378081] Added Resources folder
+ 5 files changed, 39 insertions(+), 3 deletions(-)
+ rewrite README.md (99%)
+ create mode 100644 Resources/Kickstarter_Challenge.rar
+ create mode 100644 Resources/Kickstarter_Challenge.xlsx
+ create mode 100644 Resources/Outcomes_vs_Goals.png
+ create mode 100644 Resources/Theater_Outcomes_vs_Launch.png
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git remote set-url origin git@github.com:nishabharakhada/Kickstarter-Analysis.git
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git push -u origin main
+The authenticity of host 'github.com (140.82.113.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,140.82.113.3' (RSA) to the list of known hosts.
+Counting objects: 11, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 7.63 MiB | 696.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0)
+To github.com:nishabharakhada/Kickstarter-Analysis.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git add README.md
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git commit -m "Updated README/md file"
+[main b296289] Updated README/md file
+ 1 file changed, 4 insertions(+)
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 435 bytes | 435.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:nishabharakhada/Kickstarter-Analysis.git
+   6378081..b296289  main -> main
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments/01-Kickstarter (main)
+$ cd ..
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo/01-Assignments
+$ cd ..
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo
+$ cd ..
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github
+$ cd ClassRepo
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/ClassRepo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        03-Lesson-Plans/01-Lessons/1/~$M1.1 Live Lesson Slides.pptx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/ClassRepo (master)
+$ git pull
+remote: Enumerating objects: 176, done.
+remote: Counting objects: 100% (176/176), done.
+remote: Compressing objects: 100% (138/138), done.
+remote: Total 161 (delta 5), reused 161 (delta 5), pack-reused 0
+Receiving objects: 100% (161/161), 3.24 MiB | 254.00 KiB/s, done.
+Resolving deltas: 100% (5/5), completed with 2 local objects.
+From ucb.bootcampcontent.com:UCB-Coding-Bootcamp/ucb-virt-data-pt-03-2021-u-b
+   0788a91..dbdc917  master     -> origin/master
+Updating 0788a91..dbdc917
+Fast-forward
+ 01-Assignments/03-PyPoll/README.md                 |      3 +
+ .../03-PyPoll/Resources/PyPoll_Grading_Rubric.pdf  |    Bin 0 -> 60084 bytes
+ .../Resources/PyPoll_challenge_starter_code.py     |    144 +
+ .../03-PyPoll/Resources/election_results.csv       | 369712 ++++++++++++++++++
+ .../Solved/typerighter-solved.xlsm                 |    Bin 0 -> 13371 bytes
+ .../03-Stu_TypeRighter/Solved/typerighter.vbs      |     17 +
+ .../Solved/choose_your_story.vbs                   |     20 +
+ .../Solved/choose_your_story.xlsm                  |    Bin 0 -> 18550 bytes
+ .../Solved/chicken_nuggets.vbs                     |     18 +
+ .../Solved/chicken_nuggets.xlsm                    |    Bin 0 -> 12229 bytes
+ .../Solved/chicken_ranges.vbs                      |     19 +
+ .../Solved/chicken_ranges.xlsm                     |    Bin 0 -> 12034 bytes
+ .../Activities/02-Par_FizzBuzz/Solved/FizzBuzz.vbs |     31 +
+ .../02-Par_FizzBuzz/Solved/fizzbuzz.xlsm           |    Bin 0 -> 15166 bytes
+ .../04-Evr_StarsCounter/Solved/star_counter.vbs    |     39 +
+ .../04-Evr_StarsCounter/Solved/star_counter.xlsx   |    Bin 0 -> 33734 bytes
+ .../Solved/star_counter_bonus.vbs                  |     44 +
+ .../Solved/star_counter_with_VBA.xlsm              |    Bin 0 -> 43614 bytes
+ .../Solved/choose_your_button.vbs                  |      9 +
+ .../Solved/choose_your_button.xlsm                 |    Bin 0 -> 16733 bytes
+ .../Activities/08-Stu_Gradebook/Solved/grader.vbs  |     53 +
+ .../Activities/08-Stu_Gradebook/Solved/grader.xlsm |    Bin 0 -> 21588 bytes
+ .../08-Stu_Gradebook/Solved/grader_calculate_D.vbs |     65 +
+ .../08-Stu_Gradebook/Solved/reset_button.vbs       |     14 +
+ .../1/Activities/01-Ins_Terminal/README.md         |      1 +
+ .../01-Ins_Terminal/Solved/CommonCommands.txt      |     21 +
+ .../1/Activities/02-Ins_Variables/README.md        |      1 +
+ .../02-Ins_Variables/Solved/variables.py           |     20 +
+ .../Activities/03-Stu_HelloVariableWorld/README.md |     23 +
+ .../03-Stu_HelloVariableWorld/Unsolved/.gitkeep    |      0
+ .../Unsolved/HelloVariableWorld.py                 |     32 +
+ .../03-Lessons/1/Activities/04-Ins_List/README.md  |      1 +
+ .../1/Activities/04-Ins_List/Solved/lists.py       |     30 +
+ .../1/Activities/05-Stu_GroceryList/README.md      |     24 +
+ .../05-Stu_GroceryList/Unsolved/grocery_list.py    |      9 +
+ .../Images/02-Dictionary_MultiValue.png            |    Bin 0 -> 85129 bytes
+ .../06-Ins_Dicts/Images/02-Dictionary_OneValue.png |    Bin 0 -> 12224 bytes
+ .../03-Lessons/1/Activities/06-Ins_Dicts/README.md |      1 +
+ .../Activities/06-Ins_Dicts/Solved/dictionaries.py |     47 +
+ .../07-Evr_HobbyBook-Dictionaries/README.md        |     19 +
+ .../Unsolved/HobbyBook_Unsolved.py                 |      1 +
+ .../03-Lessons/1/Images/01-Terminal_Example.png    |    Bin 0 -> 13127 bytes
+ .../1/Images/02-HelloVariableWorld_Output.png      |    Bin 0 -> 4528 bytes
+ .../1/Images/02-HelloVariableWorld_Variables.png   |    Bin 0 -> 34520 bytes
+ .../03-Lessons/1/Images/03-Grocery-list.png        |    Bin 0 -> 47225 bytes
+ .../1/Images/04-Dictionary_MultiValue.png          |    Bin 0 -> 181355 bytes
+ .../03-Lessons/1/Images/04-Dictionary_OneValue.png |    Bin 0 -> 12224 bytes
+ .../03-Lessons/1/Images/04-HobbyBook_Code.png      |    Bin 0 -> 117241 bytes
+ .../03-Lessons/1/Images/04-HobbyBook_Output.png    |    Bin 0 -> 23469 bytes
+ .../03-Lessons/1/Images/conda_version.png          |    Bin 0 -> 4700 bytes
+ .../03-Lessons/1/Images/python_version.png         |    Bin 0 -> 12137 bytes
+ .../2/Activities/01-Ins_Conditionals/README.md     |      1 +
+ .../01-Ins_Conditionals/Solved/conditionals.py     |     39 +
+ .../02-Evr_ConditionalConundrum/README.md          |     11 +
+ .../Unsolved/conditionals_unsolved.py              |     56 +
+ .../Activities/03-Par_RockPaperScissors/README.md  |     19 +
+ .../Unsolved/RPS_Unsolved.py                       |     16 +
+ .../03-Lessons/2/Activities/04-Ins_Loops/README.md |      1 +
+ .../Activities/04-Ins_Loops/Solved/LoopDeeLoop.py  |     32 +
+ .../2/Activities/05-Stu_NumberChain/README.md      |     21 +
+ .../05-Stu_NumberChain/Unsolved/.gitkeep           |      0
+ .../Unsolved/NumberChain_Unsolved.py               |     16 +
+ .../2/Activities/06-Ins_ReadCSV/README.md          |      1 +
+ .../06-Ins_ReadCSV/Resources/accounting.csv        |     13 +
+ .../2/Activities/06-Ins_ReadCSV/Solved/read_csv.py |     31 +
+ .../2/Activities/07-Stu_ReadNetFlixCSV/README.md   |     33 +
+ .../Resources/netflix_ratings.csv                  |      1 +
+ .../07-Stu_ReadNetFlixCSV/Unsolved/netflix.py      |     16 +
+ .../Unsolved/netflix_bonus.py                      |     31 +
+ .../2/Activities/08-Ins_WriteTextFile/README.md    |      1 +
+ .../08-Ins_WriteTextFile/Solved/write_text.py      |     20 +
+ .../08-Ins_WriteTextFile/output/Employee_Data.txt  |      4 +
+ .../Activities/09-Evr_WritingNetflixData/README.md |     30 +
+ .../Resources/netflix_ratings.csv                  |      1 +
+ .../Unsolved/write_netflix_unsolved.py             |     45 +
+ .../output/netflix_data.txt                        |      3 +
+ .../03-Lessons/2/Images/01-Conditionals_Code.png   |    Bin 0 -> 47771 bytes
+ .../03-Lessons/2/Images/01-Conditionals_Indent.png |    Bin 0 -> 93075 bytes
+ .../Images/02-ConditionalsConundrum_FifthChunk.png |    Bin 0 -> 28079 bytes
+ .../Images/02-ConditionalsConundrum_FirstChunk.png |    Bin 0 -> 7026 bytes
+ .../02-ConditionalsConundrum_FourthChunk.png       |    Bin 0 -> 20071 bytes
+ .../02-ConditionalsConundrum_SecondChunk.png       |    Bin 0 -> 6705 bytes
+ .../Images/02-ConditionalsConundrum_ThirdChunk.png |    Bin 0 -> 8071 bytes
+ .../03-Lessons/2/Images/03-RPS_Conditionals.png    |    Bin 0 -> 72027 bytes
+ .../03-Lessons/2/Images/03-RPS_output.png          |    Bin 0 -> 86018 bytes
+ .../03-Lessons/2/Images/04-Loops_Range.png         |    Bin 0 -> 20285 bytes
+ .../03-Lessons/2/Images/04-Loops_StringList.png    |    Bin 0 -> 21476 bytes
+ .../03-Lessons/2/Images/04-Loops_While.png         |    Bin 0 -> 10947 bytes
+ .../03-Lessons/2/Images/04-numberchain-basic.gif   |    Bin 0 -> 15167 bytes
+ .../03-Lessons/2/Images/05-BasicRead_FilePath.png  |    Bin 0 -> 10520 bytes
+ .../03-Lessons/2/Images/05-BasicRead_Open.png      |    Bin 0 -> 21684 bytes
+ .../03-Lessons/2/Images/05-ReadCSV_ExampleFile.png |    Bin 0 -> 32650 bytes
+ .../03-Lessons/2/Images/05-ReadCSV_OSPath.png      |    Bin 0 -> 53763 bytes
+ .../03-Lessons/2/Images/05-ReadCSV_ReadCode.png    |    Bin 0 -> 96172 bytes
+ .../03-Lessons/2/Images/05-ReadCSV_ReadRun.gif     |    Bin 0 -> 50468 bytes
+ .../03-Lessons/2/Images/06-ReadNetFlix_Apology.png |    Bin 0 -> 12601 bytes
+ .../03-Lessons/2/Images/06-ReadNetFlix_Grease.png  |    Bin 0 -> 31743 bytes
+ .../03-Lessons/2/Images/06-ReadNetFlix_Newline.png |    Bin 0 -> 10667 bytes
+ .../03-Lessons/2/Images/06-ReadNetFlix_Read.png    |    Bin 0 -> 33697 bytes
+ .../03-Lessons/2/Images/07-WriteText_Code.png      |    Bin 0 -> 139754 bytes
+ .../Supplemental/Python_Reference_Guide.pdf        |    Bin 0 -> 141167 bytes
+ .../03-Lessons/Supplemental/Python_Resources.md    |     25 +
+ 102 files changed, 370885 insertions(+)
+ create mode 100644 01-Assignments/03-PyPoll/README.md
+ create mode 100644 01-Assignments/03-PyPoll/Resources/PyPoll_Grading_Rubric.pdf
+ create mode 100644 01-Assignments/03-PyPoll/Resources/PyPoll_challenge_starter_code.py
+ create mode 100644 01-Assignments/03-PyPoll/Resources/election_results.csv
+ create mode 100644 03-Lesson-Plans/02-Lessons/1/Activities/03-Stu_TypeRighter/Solved/typerighter-solved.xlsm
+ create mode 100644 03-Lesson-Plans/02-Lessons/1/Activities/03-Stu_TypeRighter/Solved/typerighter.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/1/Activities/05-Stu_ChooseYourStory/Solved/choose_your_story.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/1/Activities/05-Stu_ChooseYourStory/Solved/choose_your_story.xlsm
+ create mode 100644 03-Lesson-Plans/02-Lessons/1/Activities/07-Evr_ChickenNuggets/Solved/chicken_nuggets.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/1/Activities/07-Evr_ChickenNuggets/Solved/chicken_nuggets.xlsm
+ create mode 100644 03-Lesson-Plans/02-Lessons/1/Activities/07-Evr_ChickenNuggets/Solved/chicken_ranges.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/1/Activities/07-Evr_ChickenNuggets/Solved/chicken_ranges.xlsm
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/02-Par_FizzBuzz/Solved/FizzBuzz.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/02-Par_FizzBuzz/Solved/fizzbuzz.xlsm
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/04-Evr_StarsCounter/Solved/star_counter.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/04-Evr_StarsCounter/Solved/star_counter.xlsx
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/04-Evr_StarsCounter/Solved/star_counter_bonus.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/04-Evr_StarsCounter/Solved/star_counter_with_VBA.xlsm
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/06-Stu_ChooseYourButton/Solved/choose_your_button.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/06-Stu_ChooseYourButton/Solved/choose_your_button.xlsm
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/08-Stu_Gradebook/Solved/grader.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/08-Stu_Gradebook/Solved/grader.xlsm
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/08-Stu_Gradebook/Solved/grader_calculate_D.vbs
+ create mode 100644 03-Lesson-Plans/02-Lessons/2/Activities/08-Stu_Gradebook/Solved/reset_button.vbs
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/01-Ins_Terminal/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/01-Ins_Terminal/Solved/CommonCommands.txt
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/02-Ins_Variables/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/02-Ins_Variables/Solved/variables.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/03-Stu_HelloVariableWorld/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/03-Stu_HelloVariableWorld/Unsolved/.gitkeep
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/03-Stu_HelloVariableWorld/Unsolved/HelloVariableWorld.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/04-Ins_List/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/04-Ins_List/Solved/lists.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/05-Stu_GroceryList/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/05-Stu_GroceryList/Unsolved/grocery_list.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/06-Ins_Dicts/Images/02-Dictionary_MultiValue.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/06-Ins_Dicts/Images/02-Dictionary_OneValue.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/06-Ins_Dicts/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/06-Ins_Dicts/Solved/dictionaries.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/07-Evr_HobbyBook-Dictionaries/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Activities/07-Evr_HobbyBook-Dictionaries/Unsolved/HobbyBook_Unsolved.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/01-Terminal_Example.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/02-HelloVariableWorld_Output.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/02-HelloVariableWorld_Variables.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/03-Grocery-list.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/04-Dictionary_MultiValue.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/04-Dictionary_OneValue.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/04-HobbyBook_Code.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/04-HobbyBook_Output.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/conda_version.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/1/Images/python_version.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/01-Ins_Conditionals/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/01-Ins_Conditionals/Solved/conditionals.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/02-Evr_ConditionalConundrum/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/02-Evr_ConditionalConundrum/Unsolved/conditionals_unsolved.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/03-Par_RockPaperScissors/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/03-Par_RockPaperScissors/Unsolved/RPS_Unsolved.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/04-Ins_Loops/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/04-Ins_Loops/Solved/LoopDeeLoop.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/05-Stu_NumberChain/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/05-Stu_NumberChain/Unsolved/.gitkeep
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/05-Stu_NumberChain/Unsolved/NumberChain_Unsolved.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/06-Ins_ReadCSV/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/06-Ins_ReadCSV/Resources/accounting.csv
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/06-Ins_ReadCSV/Solved/read_csv.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/07-Stu_ReadNetFlixCSV/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/07-Stu_ReadNetFlixCSV/Resources/netflix_ratings.csv
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/07-Stu_ReadNetFlixCSV/Unsolved/netflix.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/07-Stu_ReadNetFlixCSV/Unsolved/netflix_bonus.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/08-Ins_WriteTextFile/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/08-Ins_WriteTextFile/Solved/write_text.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/08-Ins_WriteTextFile/output/Employee_Data.txt
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/09-Evr_WritingNetflixData/README.md
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/09-Evr_WritingNetflixData/Resources/netflix_ratings.csv
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/09-Evr_WritingNetflixData/Unsolved/write_netflix_unsolved.py
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Activities/09-Evr_WritingNetflixData/output/netflix_data.txt
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/01-Conditionals_Code.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/01-Conditionals_Indent.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/02-ConditionalsConundrum_FifthChunk.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/02-ConditionalsConundrum_FirstChunk.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/02-ConditionalsConundrum_FourthChunk.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/02-ConditionalsConundrum_SecondChunk.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/02-ConditionalsConundrum_ThirdChunk.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/03-RPS_Conditionals.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/03-RPS_output.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/04-Loops_Range.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/04-Loops_StringList.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/04-Loops_While.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/04-numberchain-basic.gif
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/05-BasicRead_FilePath.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/05-BasicRead_Open.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/05-ReadCSV_ExampleFile.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/05-ReadCSV_OSPath.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/05-ReadCSV_ReadCode.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/05-ReadCSV_ReadRun.gif
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/06-ReadNetFlix_Apology.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/06-ReadNetFlix_Grease.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/06-ReadNetFlix_Newline.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/06-ReadNetFlix_Read.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/2/Images/07-WriteText_Code.png
+ create mode 100644 03-Lesson-Plans/03-Lessons/Supplemental/Python_Reference_Guide.pdf
+ create mode 100644 03-Lesson-Plans/03-Lessons/Supplemental/Python_Resources.md
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/ClassRepo (master)
+$ explorer .
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/ClassRepo (master)
+$ cd ..
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github
+$ cd MyRepo
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo
+$ python --version
+Python 3.8.1
+
+vbhar@LAPTOP-9SB67SNO MINGW64 /c/UCB Class Test Gitlab+Github/MyRepo
+$
